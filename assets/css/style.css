@@ -4,6 +4,7 @@
   padding: 0;
 
   font-family: lato, sans-serif;
+  letter-spacing: 110%;
 }
 
 :root {
@@ -11,11 +12,11 @@
   --background-nav: rgb(232, 232, 232);
   --header-gradient: linear-gradient(
     0deg,
-    rgb(3, 119, 252),
+    rgb(150, 200, 250),
     rgb(232, 232, 232)
   );
   --main-color-1: rgb(232, 232, 232);
-  --main-color-2: rgb(200l, 200, 200);
+  --main-color-2: rgb(222, 222, 222);
 
   /* dark theme */
 
@@ -112,16 +113,24 @@ main section {
 main section .main-section-title {
   flex: 18 1 18%;
   min-width: 110px;
+
+  font-size: 150%;
 }
 
 main section .main-section-content {
   flex: 82 1 82%;
   margin: 0;
   padding: 0;
+  font-size: 125%;
 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+main section #about-me-writeup {
+  display: flex;
+  flex-direction: column;
 }
 
 main section .main-section-content section {
@@ -142,4 +151,44 @@ main section .main-section-content #work-item-large {
   flex-basis: 750px;
   height: 360px;
   min-width: 370px;
+}
+
+main section #contact-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main section #contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#contact-form-container a {
+  text-decoration: none;
+  color: rgb(150, 200, 250);
+}
+
+input,
+textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 75%;
+  width: 45%;
+  resize: vertical;
+  min-height: 1.4em;
+
+  margin: 4px 0px;
+  padding: 4px 8px;
+}
+
+input[type="submit"] {
+  padding: 10px 30px;
+  font-size: 90%;
+  background: rgb(150, 200, 250);
+  width: auto;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
 }

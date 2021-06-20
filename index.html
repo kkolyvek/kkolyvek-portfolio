@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Koppi's Portfolio</title>
+    <title>Koppi Kolyvek - Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -15,10 +15,10 @@
             <p>Theme:</p>
         </section>
         <section id="navbar-right">
-            <a href="#about">About Me</a>
-            <a href="#work">My Work</a>
-            <a href="#contact">Contact Me</a>
-            <a href="https://github.com/kkolyvek">Github</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/kkolyvek" target="_blank">Github</a>
         </section>
     </nav>
     <header>
@@ -37,21 +37,21 @@
         <div id="about">
             <section>
                 <div class="main-section-title">
-                    <h3>About Me</h3>
+                    <h3>About</h3>
                 </div>
-                <div class="main-section-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio iusto, quas voluptate molestias culpa, reiciendis voluptates distinctio, quibusdam veritatis nobis iste optio quia magnam iure id in porro expedita.
-                    Accusamus magnam fuga incidunt explicabo, doloribus molestias debitis aspernatur. In perspiciatis aut veniam incidunt rerum ratione! Nulla iusto quasi, saepe quidem hic maxime commodi, ratione amet aliquid perspiciatis cum quis.
-                    Excepturi praesentium aperiam debitis laboriosam. Atque maxime reprehenderit veniam eaque, deserunt sapiente fugit a tenetur eligendi eos dolores, ipsa beatae iure sit vitae libero sunt esse tempora corporis odio! Neque.
-                    Odio sunt quidem, recusandae eaque excepturi corrupti vero neque totam provident, reiciendis illum impedit minima natus molestiae hic. Nemo minus explicabo vero amet veniam similique. Ab eius harum dignissimos cum!
-                    Consectetur soluta quod odio pariatur sint cumque animi laudantium, natus et distinctio, repellendus odit optio magni deleniti harum quidem saepe corrupti. Totam accusamus voluptatum impedit. Consectetur voluptatibus unde eveniet at!</p>
+                <div class="main-section-content" id="about-me-writeup">
+                    <p>Hi there, I'm Koppi. I'm an enthusiastic and quick-learning junior full stack software engineer starting my journey in the web development world.</p>
+                    <br>
+                    <p>In design, I strive to produce elegant yet intuitive solutions that leave the user comfortable and satisfied.</p>
+                    <br>
+                    <p>Though new to web development, I have a few years of experience in software as a computer vision engineer and research assistant - as well as a two year stint working in a small, agile structural engineering team.</p>
                 </div>
             </section>
         </div>
         <div id="work">
             <section>
                 <div class="main-section-title">
-                    <h3>My Work</h3>
+                    <h3>Work</h3>
                 </div>
                 <div class="main-section-content">
                     <section id="work-item-large">
@@ -69,14 +69,25 @@
         <div id="contact">
             <section>
                 <div class="main-section-title">
-                    <h3>Contact Me</h3>
+                    <h3>Contact</h3>
                 </div>
-                <div class="main-section-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio iusto, quas voluptate molestias culpa, reiciendis voluptates distinctio, quibusdam veritatis nobis iste optio quia magnam iure id in porro expedita.
-                    Accusamus magnam fuga incidunt explicabo, doloribus molestias debitis aspernatur. In perspiciatis aut veniam incidunt rerum ratione! Nulla iusto quasi, saepe quidem hic maxime commodi, ratione amet aliquid perspiciatis cum quis.
-                    Excepturi praesentium aperiam debitis laboriosam. Atque maxime reprehenderit veniam eaque, deserunt sapiente fugit a tenetur eligendi eos dolores, ipsa beatae iure sit vitae libero sunt esse tempora corporis odio! Neque.
-                    Odio sunt quidem, recusandae eaque excepturi corrupti vero neque totam provident, reiciendis illum impedit minima natus molestiae hic. Nemo minus explicabo vero amet veniam similique. Ab eius harum dignissimos cum!
-                    Consectetur soluta quod odio pariatur sint cumque animi laudantium, natus et distinctio, repellendus odit optio magni deleniti harum quidem saepe corrupti. Totam accusamus voluptatum impedit. Consectetur voluptatibus unde eveniet at!</p>
+                <div class="main-section-content" id="contact-form-container">
+                    <p>Want to chat?</p>
+                    <br>
+                    <p>Contact me using the form below, or email me at <a href="mailto:kk674@cornell.edu">kk674@cornell.edu</a>.</p>
+                    <br>
+                    <form action="mailto:kk674@cornell.edu" id="contact-form">
+                        <label for="user-name">Name:</label>
+                        <input type="text" id="user-name" placeholder="name" required>
+                        <br>
+                        <label for="user-email">Email Address:</label>
+                        <input type="email" id="user-email" placeholder="email" required>
+                        <br>
+                        <label for="user-message">Message:</label>
+                        <textarea type="text" id="user-message" rows="8" placeholder="message" required></textarea>
+                        <br>
+                        <input type="submit" value="Submit" id="form-submit-button">
+                    </form>
                 </div>
             </section>
         </div>
