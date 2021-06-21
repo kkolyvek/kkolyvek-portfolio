@@ -59,7 +59,7 @@ nav #navbar-right a:hover {
 
 header {
   position: sticky;
-  top: 45px;
+  top: 43px;
   z-index: -1;
 
   height: 40vh;
@@ -257,7 +257,8 @@ input[type="submit"]:hover {
   border: 1px solid gray;
 }
 
-@media screen and (max-width: 768px) {
+/* 768px */
+@media screen and (max-width: 1126px) {
   /* nav changes */
   nav {
     justify-content: center;
