@@ -11,14 +11,15 @@
 
 <body>
     <nav>
-        <section id="navbar-left">
+        <!-- <section id="navbar-left">
+            TODO: update with light/dark themes once more experienced
             <p>Theme:</p>
-        </section>
+        </section> -->
         <section id="navbar-right">
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
-            <a href="https://github.com/kkolyvek" target="_blank">Github</a>
+            <a href="https://github.com/kkolyvek" target="_blank" id="navlink-last">Github</a>
         </section>
     </nav>
     <header>
@@ -55,13 +56,22 @@
                 </div>
                 <div class="main-section-content">
                     <section id="work-item-large">
-                        <h4>Item 1</h4>
+                        <a href="https://github.com/kkolyvek" target="_blank">
+                            <img src="./assets/images/placeholder-image.png" alt="screenshot of visual studio code">
+                            <h4>Placeholder Project 1</h4>
+                        </a>
                     </section>
                     <section>
-                        <h4>Item 2</h4>
+                        <a href="https://github.com/kkolyvek" target="_blank">
+                            <img src="./assets/images/placeholder-image.png" alt="screenshot of visual studio code">
+                            <h4>Placeholder Project 2</h4>
+                        </a>
                     </section>
                     <section>
-                        <h4>Item 3</h4>
+                        <a href="https://github.com/kkolyvek" target="_blank">
+                            <img src="./assets/images/placeholder-image.png" alt="screenshot of visual studio code">
+                            <h4>Placeholder Project 3</h4>
+                        </a>
                     </section>
                 </div>
             </section>
@@ -77,14 +87,14 @@
                     <p>Contact me using the form below, or email me at <a href="mailto:kk674@cornell.edu">kk674@cornell.edu</a>.</p>
                     <br>
                     <form action="mailto:kk674@cornell.edu" id="contact-form">
-                        <label for="user-name">Name:</label>
-                        <input type="text" id="user-name" placeholder="name" required>
+                        <label for="subject">Name:</label>
+                        <input type="text" id="subject" name="subject" placeholder="name" required>
                         <br>
-                        <label for="user-email">Email Address:</label>
-                        <input type="email" id="user-email" placeholder="email" required>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
                         <br>
                         <label for="user-message">Message:</label>
-                        <textarea type="text" id="user-message" rows="8" placeholder="message" required></textarea>
+                        <textarea type="text" id="user-message" name="body" rows="8" placeholder="message" required></textarea>
                         <br>
                         <input type="submit" value="Submit" id="form-submit-button">
                     </form>
