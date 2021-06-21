@@ -15,12 +15,9 @@
     rgb(150, 200, 250),
     rgb(232, 232, 232)
   );
+  --main-blue: rgb(150, 200, 250);
   --main-color-1: rgb(232, 232, 232);
   --main-color-2: rgb(222, 222, 222);
-
-  /* dark theme */
-
-  --footer-color: #23272a;
 
   /* other values */
   --work-image-width-small: 370px;
@@ -29,8 +26,12 @@
   --work-image-height-large: 360px;
 }
 
-/* navbar style */
+/* header + nav style */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
   height: 5vh;
   background: var(--background-nav);
 
@@ -38,14 +39,6 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
-
-/* nav #navbar-left {
-  color: rgb(35, 35, 35);
-  font-weight: bold;
-  margin: 30px;
-
-  justify-self: flex-start;
-} */
 
 nav #navbar-right a {
   color: rgb(35, 35, 35);
@@ -64,9 +57,11 @@ nav #navbar-right a:hover {
   padding-right: 30px;
 }
 
-/* header style */
 header {
-  /* position: sticky; */
+  position: sticky;
+  top: 45px;
+  z-index: -1;
+
   height: 40vh;
   background: var(--header-gradient);
 
@@ -76,7 +71,7 @@ header {
   flex-wrap: wrap;
 }
 
-#name-area {
+header #name-area {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -103,6 +98,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  z-index: 2;
 }
 
 main #about,
@@ -207,11 +204,11 @@ main section .main-section-content {
 
 .main-section-content section:hover {
   cursor: pointer;
-  /* border: 1px solid gray; */
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
 }
 
 .main-section-content section:hover h4 {
-  background: rgb(150, 200, 250);
+  background: var(--main-blue);
 }
 
 #contact-form-container {
@@ -227,7 +224,7 @@ main section .main-section-content {
 
 #contact-form-container a {
   text-decoration: none;
-  color: rgb(150, 200, 250);
+  color: var(--main-blue);
 }
 
 #contact-form-container a:hover {
@@ -250,7 +247,7 @@ textarea {
 input[type="submit"] {
   padding: 10px 30px;
   font-size: 90%;
-  background: rgb(150, 200, 250);
+  background: var(--main-blue);
   width: auto;
   border: 1px solid var(--main-color-2);
 }
