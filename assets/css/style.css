@@ -16,6 +16,7 @@
     rgb(232, 232, 232)
   );
   --main-blue: rgb(150, 200, 250);
+  --darker-blue: #0c2d48;
   --main-color-1: rgb(232, 232, 232);
   --main-color-2: rgb(222, 222, 222);
 
@@ -83,7 +84,8 @@ header #name-area {
   flex-direction: column;
   align-self: center;
 
-  background: #c3d7bc;
+  background: var(--darker-blue);
+  color: var(--main-color-1);
   padding: 75px;
   border-radius: 5px;
 }
@@ -197,7 +199,8 @@ main section .main-section-content {
   background: var(--main-color-2);
   border-radius: 5px;
   padding: 10px;
-  margin: 30px;
+  /* margin: 30px; */
+  margin: 2%;
 }
 
 .main-section-content #work-item-large {
@@ -237,7 +240,7 @@ main section .main-section-content {
 
 #contact-form-container a {
   text-decoration: none;
-  color: var(--main-blue);
+  color: #145da0;
 }
 
 #contact-form-container a:hover {
@@ -295,12 +298,13 @@ input[type="submit"]:hover {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 90px;
+
+    opacity: 0.9;
   }
 
   header div img {
     border-radius: 0;
 
-    /* width: 1125px; */
     width: 100vw;
     object-fit: contain;
     margin-top: 0;
