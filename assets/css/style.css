@@ -26,6 +26,10 @@
   --work-image-height-large: 360px;
 }
 
+body {
+  background: var(--main-color-1);
+}
+
 /* header + nav style */
 nav {
   position: sticky;
@@ -59,28 +63,34 @@ nav #navbar-right a:hover {
 
 header {
   position: sticky;
-  top: 43px;
+  top: 45px;
   z-index: -1;
 
-  height: 40vh;
   background: var(--header-gradient);
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 header #name-area {
+  position: relative;
+  left: 50px;
+  min-width: 375px;
+
   display: flex;
   flex-direction: column;
   align-self: center;
+
+  background: #c3d7bc;
+  padding: 75px;
+  border-radius: 5px;
 }
 
 header div h1 {
   background: none;
   font-size: 350%;
-  margin-right: 20%;
   margin-bottom: 10%;
   line-height: 45px;
 }
@@ -90,7 +100,11 @@ header div img {
   background: none;
   border-radius: 10px 10px 0px 0px;
 
-  flex-basis: 50%;
+  margin-top: 10%;
+  /* margin-left: 30%; */
+
+  width: 90vh;
+  height: auto;
 }
 
 /* main style */
@@ -112,7 +126,7 @@ main #work {
 }
 
 main section {
-  margin: 30px;
+  margin: 45px;
   padding: 10px 50px;
 
   display: flex;
@@ -257,7 +271,7 @@ input[type="submit"]:hover {
   border: 1px solid gray;
 }
 
-/* 768px */
+/* screen size changes */
 @media screen and (max-width: 1126px) {
   /* nav changes */
   nav {
@@ -269,6 +283,28 @@ input[type="submit"]:hover {
   }
 
   /* header changes */
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header #name-area {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 90px;
+  }
+
+  header div img {
+    border-radius: 0;
+
+    width: 1125px;
+    object-fit: contain;
+    margin-top: 0;
+  }
 
   /* main section changes */
   main section {
