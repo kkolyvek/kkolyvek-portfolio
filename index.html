@@ -4,103 +4,229 @@
     <meta charset="UTF-8">
     <title>Koppi Kolyvek - Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 
-
 <body>
-    <nav>
-        <!-- <section id="navbar-left">
-            TODO: update with light/dark themes once more experienced with JS
-            <p>Theme:</p>
-        </section> -->
-        <section id="navbar-right">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-            <a href="https://github.com/kkolyvek" target="_blank" id="navlink-last">Github</a>
-        </section>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top custom-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-3" href="#">^</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <header>
-        <div id="name-area">
-            <h1>Koppi Kolyvek</h1>
-            <h3>Software Developer</h3>
-        </div>
-        <div>
-            <img src="./assets/images/IMG_1671.jpg" alt="pic of koppi">
-        </div>
+
+    <!-- HEADER FOR LARGE SCREENS -->
+    <header class="container-fluid custom-header hide-screen-small">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                </div>
+                <div id="name-large-screen" class="col-12 col-lg-4 p-2 d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <h1 class="display-1">Koppi Kolyvek</h1>
+                    </div>
+                </div>
+                <div id="headshot-large-screen" class="col-12 col-lg-6 d-flex justify-content-center">
+                    <img src="./assets/images/image-greenlake-removebg-cropped.png" alt="pic of koppi" class="custom-header-img">
+                    <!-- <img src="./../image-greenlake.jpeg" alt="pic of koppi"> -->
+                </div>
+            </div>
+        </section>
     </header>
 
+    <!-- HEADER FOR SMALL SCREENS -->
+    <!-- <header class="container-fluid custom-header show-screen-small">
+        <section class="container">
+            <div class="row">
+                <div id="headshot-small-screen" class="col-12 col-lg-6 d-flex justify-content-center">
+                    <img src="./../image-greenlake-removebg-cropped.png" alt="pic of koppi" class="custom-header-img">
+                </div>
+                <div id="name-small-screen" class="col-12 col-lg-6 p-2 d-flex justify-content-center">
+                    <div class="row">
+                        <h1 class="display-1">Koppi Kolyvek</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header> -->
+    <header class="container-fluid custom-header show-screen-small">
+        <div class="container">
+            <div class="row justify-content-center">
+                <img src="./assets/images/image-greenlake-removebg-cropped.png" alt="pic of koppi" class="custom-header-img">
+                <!-- <div id="name-screen-small">
+                    <h1 class="display-1">Koppi Kolyvek</h1>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    
 
-    <main>
-        <div id="about">
-            <section>
-                <div class="main-section-title">
+    <main id="about" class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 p-5">
                     <h3>About</h3>
                 </div>
-                <div class="main-section-content" id="about-me-writeup">
+                <div id="about-me-writeup" class="col-12 col-lg-9 p-5" >
                     <p>Hi there, I'm Koppi. I'm an enthusiastic and quick-learning junior full stack software engineer from the Pacific Northwest starting my journey in the web development world.</p>
-                    <br>
                     <p>In design, I strive to produce elegant yet intuitive solutions that leave the user comfortable and satisfied.</p>
-                    <br>
                     <p>Though new to web development, I have a few years of experience in software as a computer vision engineer and research assistant - as well as a two year stint working in a small, agile structural engineering team.</p>
                 </div>
-            </section>
-        </div>
-        <div id="work">
-            <section>
-                <div class="main-section-title">
+            </div>
+        </section>
+    </main>
+    <main id="work" class="container-fluid custom-work">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 p-5">
                     <h3>Work</h3>
                 </div>
-                <div class="main-section-content">
-                    <section id="work-item-large">
-                        <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">
-                            <img src="./assets/images/placeholder-image.png" alt="screenshot of visual studio code">
-                            <h4>Placeholder Project 1</h4>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">
-                            <img src="./assets/images/placeholder-image.png" alt="screenshot of visual studio code">
-                            <h4>Placeholder Project 2</h4>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">
-                            <img src="./assets/images/placeholder-image.png" alt="screenshot of visual studio code">
-                            <h4>Placeholder Project 3</h4>
-                        </a>
-                    </section>
+                <!-- START OF CAROUSEL -->
+                <div id="carouselCaptions" class="carousel slide col-12 col-lg-9 p-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">
+                                <img src="http://placekitten.com/1920/1080" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First Placeholder</h5>
+                                    <p style="padding-bottom: 10px;">Placeholder description for the first placeholder image.</p>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">
+                                <img src="http://placekitten.com/1920/1080" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second Placeholder</h5>
+                                    <p style="padding-bottom: 10px;">Placeholder description for the second placeholder image.</p>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">
+                                <img src="http://placekitten.com/1920/1080" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third Placeholder</h5>
+                                    <p style="padding-bottom: 10px;">Placeholder description for the third placeholder image.</p>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </section>
-        </div>
-        <div id="contact">
-            <section>
-                <div class="main-section-title">
+                <!-- END OF CAROUSEL -->
+            </div>
+        </section>
+    </main>
+    <main id="contact" class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 p-5">
                     <h3>Contact</h3>
                 </div>
-                <div class="main-section-content" id="contact-form-container">
-                    <p>Want to chat?</p>
-                    <br>
-                    <p>Contact me using the form below, or email me at <a href="mailto:kk674@cornell.edu">kk674@cornell.edu</a>.</p>
-                    <br>
-                    <form action="mailto:kk674@cornell.edu" id="contact-form">
-                        <label for="subject">Name:</label>
-                        <input type="text" id="subject" name="subject" placeholder="name" required>
-                        <br>
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="email" required>
-                        <br>
-                        <label for="user-message">Message:</label>
-                        <textarea type="text" id="user-message" name="body" rows="8" placeholder="message" required></textarea>
-                        <br>
-                        <input type="submit" value="Submit" id="form-submit-button">
-                    </form>
+                <div class="col-12 col-lg-9 p-5">
+                    <!-- START OF FORM -->
+                    <form action="mailto:kk674@cornell.edu" method="POST" enctype="text/plain" id="contact-form">
+                        <div class="row mb-3">
+                            <label for="subject" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row mb-6">
+                            <label for="user-message" class="col-sm-2 col-form-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea name="body" id="user-message" name="body" cols="30" rows="10" class="form-control" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-primary col-4 my-4 custom-submit">Submit</button>
+                        </div>
+                      </form>
+                    <!-- END OF FORM -->
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
+    <main class="bg-dark custom-footer">
+        <footer style="width: 80%">
+            <!-- START OF FOOTER CONTENT -->
+            <div class="p-5 custom-footer-links-wrapper">
+                <div class="custom-footer-links-col">
+                    <div class="py-1 custom-footer-links">
+                        <p class="my-auto custom-link-width">GitHub</p>
+                        <a href="https://github.com/kkolyvek" target="_blank">
+                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub's Logo" id="github-logo">
+                        </a>
+                    </div>
+                    <div class="py-1 custom-footer-links">
+                        <p class="my-auto custom-link-width">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/koppi-kolyvek-221b0a14a/" target="_blank">
+                            <img src="./assets/images/LinkedIn-Logos/In-Blue-Logo.png.original.png" alt="GitHub's Logo" height="32">
+                        </a>
+                    </div>
+                    <div class="mt-5 py-1 custom-footer-links">
+                        <!-- <p class="my-auto custom-link-width">Toggle Theme</p> -->
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Toggle Theme</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5 custom-footer-text">
+                <p>Made with <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap</a> and some experimentation. Check out the source code <a href="https://github.com/kkolyvek/kkolyvek-portfolio" target="_blank">on GitHub</a>!</p>
+            </div>
+            <!-- END OF FOOTER CONTENT -->
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
