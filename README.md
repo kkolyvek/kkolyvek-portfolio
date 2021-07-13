@@ -1,17 +1,13 @@
-# Koppi's Online Portfolio
+<h1 align="center"><strong>Koppi's Online Portfolio</strong></h1>
 
-## Deployed Site: [Koppi Kolyvek's Portfolio](https://kkolyvek.github.io/kkolyvek-portfolio/)
-
-<br>
-
-## Description:
-
-This repository contains the source code for Koppi Kolyvek's online portfolio. The site is built around CSS flex-boxes to allow for a pleasant experience at any browser dimension. Additionally, a slightly different layout is used for thinner browsers and mobile devices. The work section is currently filled with placeholders until more projects are developed.
-
-The 'work' section features clickable image links that navigate to the deployed application (currently the placeholder links lead to this repo). The 'contact' section includes a fillable form that takes advantage of the user's default mail program.
+## [Link to Site](https://kkolyvek.github.io/kkolyvek-portfolio/)
 
 <br>
 
-## Preview of Site:
+This repository contains the source code for Koppi Kolyvek's online portfolio. The site is built around CSS flex-boxes with the help of [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/) to allow for a pleasant experience at any browser dimension.
 
-![Screenshot of Webpage](./assets/images/readme-screenshot.png)
+The 'work' section features clickable image links that navigate to the deployed application. The 'contact' section includes a fillable form that takes advantage of the user's default mail program.
+
+<br>
+
+> ![Screenshot of Webpage](./assets/images/readme-screenshot.png)
