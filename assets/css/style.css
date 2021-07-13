@@ -53,8 +53,6 @@ body {
   height: auto;
 }
 
-
-
 /* main style */
 .custom-work {
   background: var(--main-color-2);
@@ -63,6 +61,11 @@ body {
 .custom-submit {
   background-color: var(--darker-blue);
   border-color: var(--darker-blue);
+}
+
+.custom-carousel-description {
+  background: slategray;
+  opacity: 0.5;
 }
 
 /* footer style */
@@ -88,6 +91,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  text-decoration: none;
+  color: var(--main-color-1);
+}
+
+.custom-footer-links-wrapper a:hover {
+  background: salmon;
+  border-radius: 4px;
 }
 
 .custom-link-width {
@@ -101,7 +112,7 @@ body {
   text-align: center;
 }
 
-.custom-footer-text a{
+.custom-footer-text a {
   text-decoration: none;
 }
 

@@ -1,8 +1,17 @@
+// ********************
 // INIT GLOBAL VARIABLE
+// ********************
 var lightTheme = true // default theme is light
 var themeToggle = document.querySelector("#flexSwitchCheckDefault");
 
+// Bootstrap
+var resumeModal = document.getElementById('resumeModal');
+var resumeViewer = document.getElementById('resumeViewer')
+
+
+// *******************
 // ADD EVENT LISTENERS
+//********************
 themeToggle.addEventListener("click", function() {
     // swap between light-mode and dark-mode depending on current state
     if (lightTheme) {
@@ -13,3 +22,8 @@ themeToggle.addEventListener("click", function() {
         lightTheme = true;
     }
 });
+
+// Bootstrap
+resumeModal.addEventListener('shown.bs.modal', function () {
+  resumeViewer.focus()
+})
