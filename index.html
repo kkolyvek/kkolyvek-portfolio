@@ -18,7 +18,6 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <h5 class="modal-title" id="resumelLabel">Resume</h5> -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex justify-content-center">
@@ -43,19 +42,19 @@
             </button>
             <div class="collapse navbar-collapse custom-navbar-items" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#about">About</a>
+                    <li class="nav-item mx-3 my-1">
+                        <a class="custom-navlink-text custom-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#work">Work</a>
+                    <li class="nav-item mx-3 my-1">
+                        <a class="custom-navlink-text custom-link" href="#work">Work</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#contact">Contact</a>
+                    <li class="nav-item mx-3 my-1">
+                        <a class="custom-navlink-text custom-link" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3 my-1">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#resumeModal">
-                            Resume
+                            Resumé
                         </button>
                     </li>
                 </ul>
@@ -94,127 +93,128 @@
         </div>
     </header>
     
-
-    <main id="about" class="container-fluid">
-        <section class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3 p-5">
-                    <h3>About</h3>
-                </div>
-                <div id="about-me-writeup" class="col-12 col-lg-9 p-5" >
-                    <p>Hi there, I'm Koppi. I'm an enthusiastic and quick-learning junior full stack software engineer from the Pacific Northwest starting my journey in the web development world.</p>
-                    <p>In design, I strive to produce elegant yet intuitive solutions that leave the user comfortable and satisfied.</p>
-                    <p>Though new to web development, I have a few years of experience in software as a computer vision engineer and research assistant - as well as a two year stint working in a small, agile structural engineering team.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <main id="work" class="container-fluid custom-work">
-        <section class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3 p-5">
-                    <h3>Work</h3>
-                </div>
-                <!-- START OF CARDS -->
-                <div class="col-12 col-lg-9 p-5">
-                    <div class="custom-card-container">
-                        <div class="card mb-3 custom-card" style="width: 18rem;">
-                            <img src="./assets/images/currency-compare-feature.png" class="card-img-top" alt="...">
-                            <div class="card-body custom-card-body">
-                                <div class="mb-3">
-                                    <h5 class="card-title"><strong>Currency Compare</strong></h5>
-                                    <p class="card-text">A single-page, client-side application for market enthusiasts to quickly compare the values of currencies.</p>
-                                </div>
-                                <div class="custom-card-links">
-                                    <a href="https://kkolyvek.github.io/crypto-compare/" target="_blank" class="btn btn-primary">Visit Site</a>
-                                    <a href="https://github.com/kkolyvek/crypto-compare" target="_blank" class="">
-                                        <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
-                                    </a>
-                                </div>
-                            </div>
-                          </div>
-                        <div class="card mb-3 custom-card" style="width: 18rem;">
-                            <img src="./assets/images/weather-dashboard-feature.png" class="card-img-top" alt="...">
-                            <div class="card-body custom-card-body">
-                                <div class="mb-3">
-                                    <h5 class="card-title"><strong>Weather Dashboard</strong></h5>
-                                    <p class="card-text">A weather application that displays current weather details of a selected city, as well as a 5 day forecast.</p>
-                                </div>
-                                <div class="custom-card-links">
-                                    <a href="https://kkolyvek.github.io/weather-dashboard/" target="_blank" class="btn btn-primary">Visit Site</a>
-                                    <a href="https://github.com/kkolyvek/weather-dashboard" target="_blank" class="">
-                                        <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
-                                    </a>
-                                </div>
-                            </div>
-                          </div>
-                        <div class="card mb-3 custom-card" style="width: 18rem;">
-                            <img src="./assets/images/password-generator-feature.png" class="card-img-top" alt="...">
-                            <div class="card-body custom-card-body">
-                                <div class="mb-3">
-                                    <h5 class="card-title"><strong>Password Generator</strong></h5>
-                                    <p class="card-text">A simple page that allows users to generate a random password tailored to their desired length and types of characters.</p>
-                                </div>
-                                <div class="custom-card-links">
-                                    <a href="https://kkolyvek.github.io/password-generator/" target="_blank" class="btn btn-primary">Visit Site</a>
-                                    <a href="https://github.com/kkolyvek/password-generator" target="_blank" class="">
-                                        <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
-                                    </a>
-                                </div>
-                            </div>
-                          </div>
+    <main class="custom-main">
+        <main id="about" class="container-fluid">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 p-5">
+                        <h3>About</h3>
+                    </div>
+                    <div id="about-me-writeup" class="col-12 col-lg-9 p-5" >
+                        <p>Hi there, I'm Koppi. I'm an enthusiastic and quick-learning junior full stack software engineer from the Pacific Northwest starting my journey in the web development world.</p>
+                        <p>In design, I strive to produce elegant yet intuitive solutions that leave the user comfortable and satisfied.</p>
+                        <p>Though new to web development, I have a few years of experience in software as a computer vision engineer and research assistant - as well as a two year stint working in a small, agile structural engineering team.</p>
                     </div>
                 </div>
-                <!-- END OF CARDS -->
-            </div>
-        </section>
-    </main>
-    <main id="contact" class="container-fluid">
-        <section class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3 p-5">
-                    <h3>Contact</h3>
+            </section>
+        </main>
+        <main id="work" class="container-fluid custom-work">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 p-5">
+                        <h3>Work</h3>
+                    </div>
+                    <!-- START OF CARDS -->
+                    <div class="col-12 col-lg-9 p-5">
+                        <div class="custom-card-container">
+                            <div class="card mb-3 custom-card" style="width: 18rem;">
+                                <img src="./assets/images/currency-compare-feature.png" class="card-img-top" alt="...">
+                                <div class="card-body custom-card-body">
+                                    <div class="mb-3">
+                                        <h5 class="card-title"><strong>Currency Compare</strong></h5>
+                                        <p class="card-text">A single-page, client-side application for market enthusiasts to quickly compare the values of currencies.</p>
+                                    </div>
+                                    <div class="custom-card-links">
+                                        <a href="https://kkolyvek.github.io/crypto-compare/" target="_blank" class="btn btn-primary">Visit Site</a>
+                                        <a href="https://github.com/kkolyvek/crypto-compare" target="_blank" class="">
+                                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                            <div class="card mb-3 custom-card" style="width: 18rem;">
+                                <img src="./assets/images/weather-dashboard-feature.png" class="card-img-top" alt="...">
+                                <div class="card-body custom-card-body">
+                                    <div class="mb-3">
+                                        <h5 class="card-title"><strong>Weather Dashboard</strong></h5>
+                                        <p class="card-text">A weather application that displays current weather details of a selected city, as well as a 5 day forecast.</p>
+                                    </div>
+                                    <div class="custom-card-links">
+                                        <a href="https://kkolyvek.github.io/weather-dashboard/" target="_blank" class="btn btn-primary">Visit Site</a>
+                                        <a href="https://github.com/kkolyvek/weather-dashboard" target="_blank" class="">
+                                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                            <div class="card mb-3 custom-card" style="width: 18rem;">
+                                <img src="./assets/images/password-generator-feature.png" class="card-img-top" alt="...">
+                                <div class="card-body custom-card-body">
+                                    <div class="mb-3">
+                                        <h5 class="card-title"><strong>Password Generator</strong></h5>
+                                        <p class="card-text">A simple page that allows users to generate a random password tailored to their desired length and types of characters.</p>
+                                    </div>
+                                    <div class="custom-card-links">
+                                        <a href="https://kkolyvek.github.io/password-generator/" target="_blank" class="btn btn-primary">Visit Site</a>
+                                        <a href="https://github.com/kkolyvek/password-generator" target="_blank" class="">
+                                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!-- END OF CARDS -->
                 </div>
-                <div class="col-12 col-lg-9 p-5">
-                    <!-- START OF FORM -->
-                    <form action="mailto:kk674@cornell.edu" method="POST" enctype="text/plain" id="contact-form">
-                        <div class="row mb-3">
-                            <label for="subject" class="col-sm-2 col-form-label">Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="subject" name="subject" required>
+            </section>
+        </main>
+        <main id="contact" class="container-fluid">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 p-5">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="col-12 col-lg-9 p-5">
+                        <!-- START OF FORM -->
+                        <form action="mailto:kk674@cornell.edu" method="POST" enctype="text/plain" id="contact-form">
+                            <div class="row mb-3">
+                                <label for="subject" class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control custom-input" id="subject" name="subject" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="email" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="row mb-3">
+                                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control custom-input" id="email" name="email" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-6">
-                            <label for="user-message" class="col-sm-2 col-form-label">Message</label>
-                            <div class="col-sm-10">
-                                <textarea name="body" id="user-message" name="body" cols="30" rows="10" class="form-control" required></textarea>
+                            <div class="row mb-6">
+                                <label for="user-message" class="col-sm-2 col-form-label">Message</label>
+                                <div class="col-sm-10">
+                                    <textarea name="body" id="user-message" name="body" cols="30" rows="10" class="form-control custom-input" required></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <button type="submit" class="btn btn-primary col-4 my-4 custom-submit">Submit</button>
-                        </div>
-                      </form>
-                    <!-- END OF FORM -->
+                            <div class="row justify-content-center">
+                                <button type="submit" class="btn btn-primary col-4 my-4 custom-submit">Submit</button>
+                            </div>
+                          </form>
+                        <!-- END OF FORM -->
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </main>
     <main class="bg-dark custom-footer">
         <footer style="width: 80%">
             <!-- START OF FOOTER CONTENT -->
             <div class="p-5 custom-footer-links-wrapper">
                 <div class="custom-footer-links-col">
-                    <a href="https://github.com/kkolyvek" target="_blank" class="p-2 custom-footer-links">
+                    <a href="https://github.com/kkolyvek" target="_blank" class="p-2 custom-footer-links custom-link">
                         <p class="my-auto custom-link-width">GitHub</p>
                         <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub's Logo" id="github-logo">
                     </a>
-                    <a href="https://www.linkedin.com/in/koppi-kolyvek-221b0a14a/" target="_blank" class="p-2 custom-footer-links">
+                    <a href="https://www.linkedin.com/in/koppi-kolyvek-221b0a14a/" target="_blank" class="p-2 custom-footer-links custom-link">
                         <p class="my-auto custom-link-width">LinkedIn</p>
                         <img src="./assets/images/LinkedIn-Logos/In-Blue-Logo.png.original.png" alt="GitHub's Logo" height="32">
                     </a>
