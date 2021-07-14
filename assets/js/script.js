@@ -17,8 +17,8 @@ themeToggle.addEventListener("click", function() {
     if (lightTheme) {
         document.documentElement.style.setProperty('--header-gradient', 'linear-gradient(0deg, #4d6680, #252525');
         document.documentElement.style.setProperty('--main-color-1', '#252525');
-        document.documentElement.style.setProperty('--main-color-2', '#3b3b3b');
-        document.documentElement.style.setProperty('--main-color-3', '#34d4d4d');
+        document.documentElement.style.setProperty('--main-color-2', '#282828');
+        document.documentElement.style.setProperty('--main-color-3', '#3d3d3d');
         document.documentElement.style.setProperty('--text-color-1', '#e8e8e8');
         document.documentElement.style.setProperty('--text-color-2', '#dedede');
         document.documentElement.style.setProperty('--main-blue', '#4d6680');

@@ -21,7 +21,7 @@
   --main-color-3: #f8f8f8;
 
   --text-color-1: #252525;
-  --text-color-2: #3b3b3b;
+  --text-color-2: #282828;
 
   /* other values */
   --work-image-width-small: 370px;
@@ -39,13 +39,17 @@ body {
 }
 
 .custom-link:hover {
-  background: var(--main-blue);
-  color: #3b3b3b;
+  background: #96c8fa;
+  color: #282828;
 }
 
 /* ****************** */
 /* header + nav style */
 /* ****************** */
+.custom-modal {
+  background: var(--main-color-3);
+}
+
 .custom-nav {
   background-color: var(--main-color-1);
 }
@@ -115,11 +119,11 @@ body {
 
 .custom-card {
   background: var(--main-color-3);
-  border: 1px solid slategray;
+  border: 1px solid var(--main-color-1);
 }
 
 .custom-card-body {
-  border-top: 1px solid slategray;
+  border-top: 1px solid var(--main-color-1);
 
   display: flex;
   flex-direction: column;
@@ -139,6 +143,7 @@ body {
   justify-content: center;
 
   color: #e8e8e8;
+  background: #282828;
 }
 
 .custom-footer-links-wrapper {
