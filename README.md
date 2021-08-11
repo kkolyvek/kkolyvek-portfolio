@@ -1,8 +1,8 @@
 <h1 align="center"><strong>Koppi's Online Portfolio</strong></h1>
 
-## [Link to Site](https://kkolyvek.github.io/kkolyvek-portfolio/)
-
-<br>
+<h2 align="center">
+  <a href="https://kkolyvek.github.io/kkolyvek-portfolio/">Deployed Site</a>
+</h2>
 
 This repository contains the source code for Koppi Kolyvek's online portfolio. The site is built around CSS flex-boxes with the help of [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/) to allow for a pleasant experience at any browser dimension.
 

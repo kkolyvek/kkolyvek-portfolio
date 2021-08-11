@@ -5,6 +5,8 @@
     <title>Koppi Kolyvek - Portfolio</title>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4abdc4b91e.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom stylesheet -->
@@ -119,52 +121,147 @@
                     </div>
                     <!-- START OF CARDS -->
                     <div class="col-12 col-lg-9 p-5">
-                        <div class="custom-card-container">
-                            <div class="card mb-3 custom-card" style="width: 18rem;">
-                                <img src="./assets/images/currency-compare-feature.png" class="card-img-top" alt="...">
+                        <div class="card custom-card">
+                            <a href="https://recipes-refocused.herokuapp.com/" target="_blank" class="card-link-text">
                                 <div class="card-body custom-card-body">
-                                    <div class="mb-3">
-                                        <h5 class="card-title"><strong>Currency Compare</strong></h5>
-                                        <p class="card-text">A single-page, client-side application for market enthusiasts to quickly compare the values of currencies.</p>
+                                    <!-- IMAGE -->
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./assets/images/recipes-refocused-feature.png" alt="...">
                                     </div>
-                                    <div class="custom-card-links">
-                                        <a href="https://kkolyvek.github.io/crypto-compare/" target="_blank" class="btn btn-primary">Visit Site</a>
-                                        <a href="https://github.com/kkolyvek/crypto-compare" target="_blank" class="">
-                                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
-                                        </a>
+                                    <div class="d-flex justify-content-between">
+                                        <!-- WORK DESCRIPTION -->
+                                        <div class="card-content">
+                                            <h5 class="card-title"><strong>Recipes Refocused</strong></h5>
+                                            <p class="card-text">A full stack application that allows users to browse, comment on, and save recipes that other users have shared. The recipe creation page restricts all recipes to the same format so users can get right to reading the recipe and learning new kitchen techniques.</p>
+                                        </div>
+                                        <div class="link-arrow">
+                                            <i class="fas fa-lg fa-chevron-right"></i>
+                                        </div>
                                     </div>
                                 </div>
-                              </div>
-                            <div class="card mb-3 custom-card" style="width: 18rem;">
-                                <img src="./assets/images/weather-dashboard-feature.png" class="card-img-top" alt="...">
-                                <div class="card-body custom-card-body">
-                                    <div class="mb-3">
-                                        <h5 class="card-title"><strong>Weather Dashboard</strong></h5>
-                                        <p class="card-text">A weather application that displays current weather details of a selected city, as well as a 5 day forecast.</p>
+                            </a>
+                            <div class="card-footer d-flex align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <!-- BADGES OF TECH USED -->
+                                    <div class="d-flex">
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">MVC</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">Handlebars</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">Express</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">Sequelize</span>
                                     </div>
-                                    <div class="custom-card-links">
-                                        <a href="https://kkolyvek.github.io/weather-dashboard/" target="_blank" class="btn btn-primary">Visit Site</a>
-                                        <a href="https://github.com/kkolyvek/weather-dashboard" target="_blank" class="">
-                                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
-                                        </a>
-                                    </div>
-                                </div>
-                              </div>
-                            <div class="card mb-3 custom-card" style="width: 18rem;">
-                                <img src="./assets/images/password-generator-feature.png" class="card-img-top" alt="...">
-                                <div class="card-body custom-card-body">
-                                    <div class="mb-3">
-                                        <h5 class="card-title"><strong>Password Generator</strong></h5>
-                                        <p class="card-text">A simple page that allows users to generate a random password tailored to their desired length and types of characters.</p>
-                                    </div>
-                                    <div class="custom-card-links">
-                                        <a href="https://kkolyvek.github.io/password-generator/" target="_blank" class="btn btn-primary">Visit Site</a>
-                                        <a href="https://github.com/kkolyvek/password-generator" target="_blank" class="">
-                                            <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
-                                        </a>
+                                    <!-- DROPDOWN CONTAINING ROLE DETAILS -->
+                                    <div class="d-flex flex-column">
+                                        <button class="btn d-inline-flex align-items-center rounded collapsed role-dropdown" data-bs-toggle="collapse" data-bs-target="#recipesrefocused-collapse" aria-expanded="false" style="width: fit-content;">
+                                            <i class="fas fa-sm fa-chevron-right fa-arrow-down"></i>
+                                            <p class="ms-1" style="margin: 0; padding: 0; text-align: center;">Frontend Developer</p>
+                                        </button>
+                                        <div class="collapse" id="recipesrefocused-collapse">
+                                            <ul class="fw-normal pb-1 small">
+                                                <li>Worked with handlebars and express to create the 'view recipe', 'create recipe', and 'edit recipe' pages, as well as their associated routes.</li>
+                                                <li>Developed comment functionality, including editing and deleting exisiting comments.</li>
+                                                <li>Contributed to a central CSS file to keep styling consistent across the whole site.</li>
+                                                <li>Created a responsive UI that adapts to all screen sizes.</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                              </div>
+                                <a href="https://github.com/TheHebi/recipe-forum-site" target="_blank" class="ms-3 my-1">
+                                    <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <a href="https://kkolyvek.github.io/crypto-compare/" target="_blank" class="card-link-text">
+                                <div class="card-body custom-card-body">
+                                    <!-- IMAGE -->
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./assets/images/currency-compare-feature.png" alt="...">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <!-- WORK DESCRIPTION -->
+                                        <div class="card-content">
+                                            <h5 class="card-title"><strong>Currency Compare</strong></h5>
+                                            <p class="card-text">A single-page, client-side application for market enthusiasts to quickly compare the values of currencies. Uses APIs from CoinGecko and Frankfurter.</p>
+                                        </div>
+                                        <div class="link-arrow">
+                                            <i class="fas fa-lg fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-footer d-flex align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <!-- BADGES OF TECH USED -->
+                                    <div class="d-flex">
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">JavaScript</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">HTML</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">CSS</span>
+                                    </div>
+                                    <!-- DROPDOWN CONTAINING ROLE DETAILS -->
+                                    <div class="d-flex flex-column">
+                                        <button class="btn d-inline-flex align-items-center rounded collapsed role-dropdown" data-bs-toggle="collapse" data-bs-target="#cryptocompare-collapse" aria-expanded="false" style="width: fit-content;">
+                                            <i class="fas fa-sm fa-chevron-right fa-arrow-down"></i>
+                                            <p class="ms-1" style="margin: 0; padding: 0; text-align: center;">Frontend Developer</p>
+                                        </button>
+                                        <div class="collapse" id="cryptocompare-collapse">
+                                            <ul class="fw-normal pb-1 small">
+                                                <li>Developed the responsive input fields that update the converted value as the user is typing.</li>
+                                                <li>Optimized the site's communication with the APIs such that data is requested only when a user inputs a valid comparison.</li>
+                                                <li>Created a responsive UI that adapts to all screen sizes.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/kkolyvek/crypto-compare" target="_blank" class="ms-3 my-1">
+                                    <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                            <a href="https://kkolyvek.github.io/weather-dashboard/" target="_blank" class="card-link-text">
+                                <div class="card-body custom-card-body">
+                                    <!-- IMAGE -->
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./assets/images/weather-dashboard-feature.png" alt="...">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <!-- WORK DESCRIPTION -->
+                                        <div class="card-content">
+                                            <h5 class="card-title"><strong>Weather Dashboard</strong></h5>
+                                            <p class="card-text">A single-page, client-side weather application that displays current weather details of a selected city, as well as a 5 day forecast. Uses the OpenWeather API.</p>
+                                        </div>
+                                        <div class="link-arrow">
+                                            <i class="fas fa-lg fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-footer d-flex align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <!-- BADGES OF TECH USED -->
+                                    <div class="d-flex">
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">JavaScript</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">HTML</span>
+                                        <span class="badge rounded-pill bg-primary mx-1 my-1">CSS</span>
+                                    </div>
+                                    <!-- DROPDOWN CONTAINING ROLE DETAILS -->
+                                    <div class="d-flex flex-column">
+                                        <button class="btn d-inline-flex align-items-center rounded collapsed role-dropdown" data-bs-toggle="collapse" data-bs-target="#weatherdashboard-collapse" aria-expanded="false" style="width: fit-content;">
+                                            <i class="fas fa-sm fa-chevron-right fa-arrow-down"></i>
+                                            <p class="ms-1" style="margin: 0; padding: 0; text-align: center;">Sole Developer</p>
+                                        </button>
+                                        <div class="collapse" id="weatherdashboard-collapse">
+                                            <ul class="fw-normal pb-1 small">
+                                                <li>Developed full interaction with the OpenWeather API to deliver relevant data.</li>
+                                                <li>Worked with the CSS framework Bulma to create a pleasent user interface.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/kkolyvek/weather-dashboard" target="_blank" class="ms-3 my-1">
+                                    <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub Logo">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- END OF CARDS -->

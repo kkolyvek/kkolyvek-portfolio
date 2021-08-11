@@ -3,6 +3,7 @@
 // ********************
 var lightTheme = true // default theme is light
 var themeToggle = document.querySelector("#flexSwitchCheckDefault");
+var roleDropdownToggle = document.querySelectorAll('.role-dropdown');
 
 // Bootstrap
 var resumeModal = document.getElementById('resumeModal');
@@ -34,6 +35,20 @@ themeToggle.addEventListener("click", function() {
         lightTheme = true;
     }
 });
+
+for (let i=0; i<roleDropdownToggle.length; i++) {
+    const btn = roleDropdownToggle[i]
+    btn.addEventListener('click', function() {
+        // HANDLE IF BUTTON IS CLICKED DIRECTLY
+        if (!btn.children[0].classList.contains('open')) {
+            // add open class to icon if not present
+            btn.children[0].classList.add('open');
+        } else if (btn.children[0].classList.contains('open')) {
+            // remove open class from icon if present
+            btn.children[0].classList.remove('open');
+        };  
+    });
+};
 
 // Bootstrap
 resumeModal.addEventListener('shown.bs.modal', function () {

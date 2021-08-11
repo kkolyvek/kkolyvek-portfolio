@@ -103,6 +103,16 @@ body {
 /* ********** */
 /* main style */
 /* ********** */
+.card-link-text {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link-text:hover {
+  /* Maybe change this to make hovering visibly a path out? */
+  color: inherit;
+}
+
 .custom-main {
   color: var(--text-color-1);
 }
@@ -120,14 +130,57 @@ body {
 .custom-card {
   background: var(--main-color-3);
   border: 1px solid var(--main-color-1);
+  margin-bottom: 1rem;
+}
+
+.card-image-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.card-image {
+  border-radius: 0.3rem;
+  object-fit: cover;
+  max-width: 10em;
+  max-height: 5em;
+
+  margin: 0 !important;
 }
 
 .custom-card-body {
-  border-top: 1px solid var(--main-color-1);
-
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+}
+
+.card-content {
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+.link-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.role-dropdown {
+  color: inherit;
+}
+
+.role-dropdown:hover {
+  color: inherit;
+}
+
+.fa-arrow-down {
+  transform: rotate(0deg);
+  transition: transform 0.25s linear;
+}
+
+.fa-arrow-down.open {
+  transform: rotate(90deg);
+  transition: transform 0.25s linear;
 }
 
 .custom-card-links {
@@ -192,6 +245,7 @@ body {
   color: var(--text-color-1);
 }
 
+/* RESPONSIVENESS */
 @media screen and (max-width: 991px) {
   .show-screen-small {
     display: flex;
@@ -208,8 +262,28 @@ body {
   .hide-screen-small {
     display: flex;
   }
-
   .custom-header-img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .custom-card-body {
+    flex-direction: column;
+  }
+  .card-image-container {
+    justify-content: center;
+  }
+  .card-image {
+    max-width: 20em;
+    max-height: 10em;
+  }
+  .card-content {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .link-arrow {
+    display: none;
   }
 }
